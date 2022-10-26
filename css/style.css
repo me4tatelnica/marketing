@@ -1,11 +1,11 @@
 /* Базовые стили */
-html{
+html {
   box-sizing: border-box;
 }
 
 *,
 *::after,
-*::before{
+*::before {
   box-sizing: inherit;
 }
 
@@ -38,7 +38,7 @@ ul[class] {
 }
 
 img {
-  max-width: 100%;  /* Решит проблему со скроллингом на разных устройствах */
+  max-width: 100%; /* Решит проблему со скроллингом на разных устройствах */
   display: block;
 }
 
@@ -49,12 +49,111 @@ select {
   font: inherit;
 }
 
+a {
+  text-decoration: none;
+}
+
+/* font-family: "Merriweather", serif;
+  font-family: "Montserrat", sans-serif;
+
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif; */
+
 body {
   min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #373a39;
 }
 
 .container {
-  min-width: 1190px;
+  max-width: 1190px;
   padding: 0 10px;
   margin: 0 auto;
+}
+
+.header {
+}
+.header__top {
+}
+
+.header__to-inner {
+  padding-bottom: 29px;
+  /* Раскидает лого и меню по разным сторонам */
+  display: flex;
+  justify-content: space-between;
+  /* Задаст вертикальное выравнивание лого и меню */
+  align-items: flex-end;
+}
+.logo {
+}
+.logo__img {
+}
+.menu {
+}
+.menu__list {
+  /* Расставит элементы в линию */
+  display: flex;
+}
+.menu__list-item {
+}
+
+.menu__list-item + .menu__list-item {
+  margin-left: 32px;
+}
+
+.menu__list-link {
+  padding: 0 9px 9px;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.6px;
+  color: #373a39;
+  transition: all 0.5s;
+}
+
+.menu__list-link:hover {
+  border-bottom: 1px solid #fcbb08;
+}
+
+.header__content {
+  background-image: url("../images/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header__content-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: calc(100vh - 93px);
+}
+.header__title {
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 88px;
+  color: #fff;
+  margin-top: auto;
+  margin-bottom: 19px;
+}
+
+.header__subtitle {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 2.74286px;
+  color: #FCBB08;
+  margin-bottom: auto;
+}
+
+.header__icon {
+  margin-bottom: 62px;
 }
