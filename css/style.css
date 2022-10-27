@@ -257,6 +257,7 @@ body {
   position: relative;
 }
 
+/* Вставляем иконки перед текстами */
 .expertise__item::before{
   content: "";
   position: absolute;
@@ -265,7 +266,6 @@ body {
   width: 50px;
   height: 50px;
 }
-
 .expertise__item--design::before {
   background-image: url('../images/design-icon.svg');
 }
@@ -287,4 +287,27 @@ body {
 
 .expertise__item-text {
   color: #777;
+}
+
+/* Magic */
+.magic {
+  background-color: #F6F8FA;
+  background-image: url('../images/magic-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: left 80%;
+}
+
+.magic__inner {
+  max-width: 470px;
+  margin-left: auto;
+  padding: 100px 0 190px;
+}
+
+.magic__title{
+  margin-bottom: 67px;
+}
+
+.magic-text p{
+  margin-bottom: 25px;
 }
