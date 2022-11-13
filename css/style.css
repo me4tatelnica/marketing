@@ -748,6 +748,12 @@ ul.footer__social {
 
 /* Адаптив - медиа запросы */
 
+
+@media (max-width: 1440px){
+  .magic__inner {
+    padding: 50px 0;
+  }
+}
 @media (max-width: 1200px){
   /* About */
   .about__inner {
@@ -788,6 +794,16 @@ ul.footer__social {
   .expertise__item {
     width: 100%;
     margin-bottom: 40px;
+  }
+  .magic {
+    background-image: none;
+  }
+  .magic__inner {
+    max-width: 100%;
+    margin-left: 0;
+  }
+  .magic__title {
+    margin-bottom: 50px;
   }
 }
 
