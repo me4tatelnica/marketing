@@ -756,7 +756,20 @@ ul.footer__social {
   .magic__inner {
     padding: 50px 0;
   }
+  .slick-prev {
+    left: 0;
+  }
+  .slick-next {
+    right: 0;
+  }
+  .slider-blog__item {
+    padding: 120px 60px;
+  }
+  ul.slick-dots {
+    margin-left: 60px;
+  }
 }
+
 @media (max-width: 1200px){
   /* About */
   .about__inner {
@@ -768,7 +781,8 @@ ul.footer__social {
   }
   .about,
   .expertise,
-  .portfolio {
+  .portfolio,
+  .slider-blog {
     padding: 75px 0;
   }
   .aboit__text p {
@@ -904,6 +918,16 @@ ul.footer__social {
   .portfolio__number__item {
     width: 50%;
     margin-bottom: 40px;
+  }
+  .slider-blog__item {
+    padding: 40px 0px;
+  }
+  ul.slick-dots {
+    margin-left: 0px;
+  }
+  .slider-blog__item-title {
+    font-size: 24px;
+    line-height: 32px;
   }
 }
 
