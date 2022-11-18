@@ -777,14 +777,16 @@ ul.footer__social {
 
   }
   .about__title,
-  .team-title {
+  .team-title,
+  .pricing__title {
     margin-bottom: 50px;
   }
   .about,
   .expertise,
   .portfolio,
-  .slider-blog
-  .team {
+  .slider-blog,
+  .team,
+  .pricing {
     padding: 75px 0;
   }
   .aboit__text p {
@@ -800,7 +802,9 @@ ul.footer__social {
   .portfolio__filter-btn {
     margin-right: 0;
   }
-  .team__items {
+  .team__items,
+  .pricing__items,
+  .clients__list {
     column-gap: 20px;
   }
 
@@ -933,6 +937,22 @@ ul.footer__social {
   .slider-blog__item-title {
     font-size: 24px;
     line-height: 32px;
+  }
+  .pricing__items {
+    display: block;
+  }
+  ul.pricing__item {
+    margin: 0 auto;
+    max-width: 500px;
+    width: 100%;
+  }
+  .clients__list {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .clients__list li {
+    margin-bottom: 25px;
+
   }
 }
 
